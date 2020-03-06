@@ -1,0 +1,385 @@
+html, body, div{
+    margin:0;
+    width:100%;
+    height:100%;
+}
+body{
+    background-color: white;
+    /* background-color: #edac1a; */
+    /* background-color: #2b3e85; */
+    display:grid;
+    grid-template-columns:10% auto;
+    grid-template-rows: 150px auto;
+}
+.burger div{
+    display:none;
+}
+.logo{
+    width:5rem;
+    position: absolute;
+    margin: 2rem;
+    margin-left:4rem;
+}
+header{
+    background-color: #2b3e85;
+    color:black;
+    padding:1rem;
+    grid-column-start:span 5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.box{
+    width:20rem;
+    height:5rem;
+    background-color: #FFE784;
+    justify-content: center;
+    display:flex;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+.burger div{
+    width:25px;
+    height:2px;
+    background-color:darkblue;
+}
+.sidebarnav{
+    background-color: #FFE784;
+    text-align: center;
+}
+.sidebarnav a{
+    color:black;
+    text-decoration: none;
+    display:block;
+    font-size: 1.25rem;
+    padding:2rem;
+}
+.sidebarnav a:hover{
+    background-color: darkslategrey;
+}
+main{
+    margin:0 10rem 0rem;
+    background-color: #2b3e85;
+    grid-column: span 4;
+}
+h2{
+    color:white;
+    margin-left:1rem;
+    text-decoration: underline;
+    font-size:100%;
+}
+section{
+    padding:1rem;
+    background-color: white;
+    margin: 1rem 0;
+    border:2px solid #2b3e85;
+    height:25%;
+}
+.cont{
+    padding:1rem;
+    background-color: white;
+    margin: 1rem 0;
+    border:2px solid #2b3e85;
+    height:10%;
+}
+.invent{
+    grid-column:span 4;
+    display:grid;
+    grid-template-columns:30% 60%;
+    margin:0 3rem 0rem;
+    background-color:white;
+    padding:1rem;
+}
+.insect{
+    height:1rem;
+    text-align:center;
+    background-color: white;
+    margin: 0rem 0;
+    height:20px;
+}
+.insect2{
+    position: relative;
+    background-color: white;
+    height:100px;
+    width:97.5%;
+    margin-left:10px;
+    font-size:12pt;
+    margin-top: 1rem;
+    color:#FFE784;
+
+}
+.insect2 img{
+    position: absolute;
+    width:75%;
+    height:75%;
+    top:9px;
+    left:10px;
+}
+.insect2 img:hover{
+    position: absolute;
+    top: -50%;
+    left:-50%;
+    width: 500px;
+    height: 500px;
+    outline-offset: 1px rgba(0,0,0, 0.3);
+    outline: 100px solid rgba(0,0,0, 0.3);
+    color: black;
+    z-index: 1;
+}
+
+.picBox{
+    position: absolute;
+    background-color: #2b3e85;
+    width:10%;
+    height:67%;
+    top:1rem;
+    left:1rem;
+}
+.descBox{
+    position: absolute;
+    background-color: #2b3e85;
+    width:73%;
+    height:67%;
+    top:1rem;
+    left:7.7rem;
+}
+.priceBox{
+    position: absolute;
+    background-color: #2b3e85;
+    width:10%;
+    height:67%;
+    top:1rem;
+    left:87.8%;
+    text-align: center;
+    display:inline-block
+}
+.lay1{
+    margin:15px 0rem 15px;
+    grid-column-start: 1;
+    background-color: #2b3e85;
+    border:3px solid #2b3e85;
+}
+.lay2{
+    margin:15px 3rem 15px;
+    background-color: #2b3e85;
+    border:3px solid #2b3e85;
+}
+@media(max-width:1650px){
+    .burger div{
+        display:none;
+    }
+    .picBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:10%;
+        height:67%;
+        top:1rem;
+        left:1rem;
+    }
+    .descBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:69%;
+        height:67%;
+        top:1rem;
+        left:6.7rem;
+    }
+    .priceBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:8%;
+        height:67%;
+        top:1rem;
+        left:87.8%;
+        text-align: center;
+        display:inline-block
+    }
+}
+@media(max-width:1600px){
+    .burger div{
+        display:none;
+    }
+    .picBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:8%;
+        height:67%;
+        top:1rem;
+        left:1rem;
+    }
+    .descBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:69%;
+        height:67%;
+        top:1rem;
+        left:6.7rem;
+    }
+}
+@media(max-width:1225px){
+    .burger div{
+        display:none;
+    }
+    .picBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:10%;
+        height:67%;
+        top:1rem;
+        left:1rem;
+    }
+    .descBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:70%;
+        height:67%;
+        top:1rem;
+        left:5rem;
+    }
+    .priceBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:8%;
+        height:67%;
+        top:1rem;
+        left:87.8%;
+        text-align: center;
+        display:inline-block
+    }
+}
+@media(max-width:1200px){
+    .burger div{
+        display:none;
+    }
+    .picBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:10%;
+        height:67%;
+        top:1rem;
+        left:1rem;
+    }
+    .descBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:69%;
+        height:67%;
+        top:1rem;
+        left:6.7rem;
+    }
+    .priceBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:8%;
+        height:67%;
+        top:1rem;
+        left:87.8%;
+        text-align: center;
+        display:inline-block
+    }
+}
+@media(max-width:1000px){
+    .picBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:10%;
+        height:67%;
+        top:1rem;
+        left:1rem;
+    }
+    .descBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:69%;
+        height:67%;
+        top:1rem;
+        left:6rem;
+    }
+    .priceBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:10%;
+        height:67%;
+        top:1rem;
+        left:87.8%;
+        text-align: center;
+        display:inline-block
+    }
+    .sidebarnav{
+        display:none;
+    }
+    .invent{
+        grid-column:span 4;
+        display:grid;
+        grid-template-columns:30% 75%;
+        margin:0 3rem 0rem;
+        background-color:white;
+        padding:1rem;
+    }
+}
+@media(max-width:875px){
+    .picBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:10%;
+        height:67%;
+        top:1rem;
+        left:1rem;
+    }
+    .descBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:69%;
+        height:67%;
+        top:1rem;
+        left:16%;
+    }
+    .priceBox{
+        position: absolute;
+        background-color: #2b3e85;
+        width:10%;
+        height:67%;
+        top:1rem;
+        left:87.8%;
+        text-align: center;
+        display:inline-block
+    }
+    .sidebarnav{
+        display:none;
+    }
+    .invent{
+        grid-column:span 4;
+        display:grid;
+        grid-template-columns:30% 75%;
+        margin:0 3rem 0rem;
+        background-color:white;
+        padding:1rem;
+    }
+}
+@media(max-width:375px){
+    .burger div{
+        width:100px;
+        height:80px;
+        background-color:black;
+        z-index: 1;
+    }
+    .burger{
+        padding-top:0%;
+        padding-right:0rem;
+        width:10%;
+        position:absolute;
+        background-color:white;
+    }
+    .nav-links{
+        list-style: none;
+        display:none;
+    }
+    .logo{
+        display: none;
+    }
+    .box{
+        width:50%;
+    }
+}
