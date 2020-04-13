@@ -5,8 +5,6 @@ html, body, div{
 }
 body{
     background-color: white;
-    /* background-color: #edac1a; */
-    /* background-color: #2b3e85; */
     display:grid;
     grid-template-columns:10% auto;
     grid-template-rows: 150px auto;
