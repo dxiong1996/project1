@@ -11,7 +11,7 @@ body{
     grid-template-columns:10% auto;
     grid-template-rows: 150px auto;
 }
-.burger div{
+.nav-links{
     display:none;
 }
 .logo{
@@ -40,11 +40,15 @@ header{
     align-content: center;
     font-weight: bold;
 }
-.burger div{
+.burger{
     width:25px;
-    height:2px;
-    background-color:darkblue;
+    height:50px;
+    background-color:magenta;
 }
+#menu-button{
+    display: none;
+  }
+  
 .sidebarnav{
     background-color: #FFE784;
     text-align: center;
@@ -196,6 +200,9 @@ section{
         text-align: center;
         display:inline-block
     }
+    #menu-button{
+        display: none;
+      }
 }
 @media(max-width:1600px){
     .burger div{
@@ -279,6 +286,9 @@ section{
         text-align: center;
         display:inline-block
     }
+    #menu-button{
+        display: none;
+      }
 }
 @media(max-width:1000px){
     .picBox{
@@ -318,6 +328,17 @@ section{
         background-color:white;
         padding:1rem;
     }
+    #menu-button{
+        padding: 10px;
+    
+        display: block;
+        align-self: stretch;
+        width:25px;
+        left:25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }     
 }
 @media(max-width:875px){
     .picBox{
@@ -356,6 +377,11 @@ section{
         margin:0 3rem 0rem;
         background-color:white;
         padding:1rem;
+    }
+}
+@media(max-width:750px){
+    .logo{
+        display: none;
     }
 }
 @media(max-width:375px){
